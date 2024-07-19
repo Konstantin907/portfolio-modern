@@ -23,7 +23,7 @@ const stats = [
 
 const Stats = () => {
   return (
-    <section className="container mx-auto">
+    <section className="container mx-auto pt-4 pb-12 xl:pt-0 xl:pb-0">
       <div className="flex flex-wrap gap-6 max-w-[80vw] mx-auto
         xl:max-w-none
       ">
