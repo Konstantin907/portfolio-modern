@@ -17,10 +17,10 @@ const projects = [
     num: '01',
     category: 'frontend',
     title: 'Star Portfolio',
-    description: 'lorem ipsum nesto i sotala sranja culp. Cupiciade',
+    description: 'Online T-shirt designing, you can use text, color, and pictures from all platforms. You can be really creative!',
     stack:[
       { name: 'React.js'}, {name: 'Css 3'}, {name: 'Javascript'},],
-    image: '/project1.png',
+    image: '/first-4.png',
     live: 'https://threejs-project-delta.vercel.app/',
     github: 'https://github.com/Konstantin907/threejs-project',
   },
@@ -30,10 +30,10 @@ const projects = [
     num: '02',
     category: 'fullstack',
     title: 'Online Chat Application',
-    description: 'lorem ipsum nesto i sotala sranja culp. Cupiciade',
+    description: 'Online chatting app, desiged for a you and your friends, you can upload pictures, messages, anything you want, you cant block users, change profile. Online chatting app for your using.',
     stack:[
       { name: 'React.js'}, {name: 'Css 3'}, {name: 'Javascript'}, {name: 'Nodejs'},{name: 'Firebase'},],
-    image: '/project2.png',
+    image: '/projectimgedit.png',
     live: 'https://chat-app-fullstack-teal.vercel.app/',
     github: 'https://github.com/Konstantin907/chat-app-fullstack',
   },
@@ -66,7 +66,7 @@ const Work = () => {
                 <p className="text-white/60">{project.description}</p>
                 <ul className="flex gap-4">
                   {project.stack.map((item, index)=>(
-                    <li key={index} className="text-xl text-accent">{item.name}
+                    <li key={index} className="text-lg text-accent">{item.name}
                     {index !== project.stack.length - 1 && '.'}
                     </li>
                   ))}
@@ -112,7 +112,7 @@ const Work = () => {
                   >
                   {projects.map((project, index)=>(
                       <SwiperSlide key={index} className="w-full">
-                          <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                          <div className="h-[430px] w-[650px] relative group flex justify-center items-center bg-pink-50/20">
                               <div className="relative w-full h-full">
                                <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                                 {/* img */}

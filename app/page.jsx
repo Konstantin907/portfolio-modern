@@ -1,8 +1,10 @@
+'use client'
 import Photo from "@/components/Photo";
 import Social from "@/components/Social";
 import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from 'react-icons/fi'
+import Link from 'next/link'
 
 
 const Home = () => {
@@ -21,11 +23,17 @@ const Home = () => {
             </p>
 
             <div className="flex flex-col xl:flex-row items-center gap-8">
+
+            <Link 
+            href='https://drive.google.com/file/d/1AUaM4ZbwIDNGzZdZ7dWRa-ZT9nshqdZ5/view?usp=drive_link'
+            >
               <Button 
-                variant='outline' size='lg' className='uppercase flex items-center gap-2'>
-                  Download CV
-                  <FiDownload className="text-xl "/>
-              </Button>
+                  variant='outline' size='lg' className='uppercase flex items-center gap-2'>
+                    View My CV
+                    <FiDownload className="text-xl "/>
+                </Button>
+            </Link>              
+              
               <div className="mb-8 xl:mb-0">
                 <Social containerStyle='flex gap-6' 
                 iconStyles='w-9 h-9 border border-accent 

@@ -7,11 +7,16 @@ import {
   FaReact,
   FaFigma,
   FaNodeJs,
+  FaPython
 } from 'react-icons/fa'
-
+import { IoLogoFirebase } from "react-icons/io5";
 import {
   SiTailwindcss, SiNextdotjs
 } from 'react-icons/si'
+import { SiPrisma } from "react-icons/si";
+
+import { GrMysql } from "react-icons/gr";
+
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip' 
@@ -22,7 +27,7 @@ import { motion } from 'framer-motion'
 //about
 const about = {
   title: 'About me',
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, libero.",
+  description: "Curious, positive, geek. Maybe too curious tech geek.",
   info:[
     {
       fieldName: 'Name',
@@ -56,7 +61,7 @@ const about = {
 const experience = {
   icon: '',
   title: 'My experience',
-  description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime aut deserunt consequuntur aliquam iste nesciunt!',
+  description: 'My positions in the past related to Web Development:',
   items: [
     {
       company: 'Stadion DOO Distribution',
@@ -81,7 +86,7 @@ const experience = {
 const education = {
   icon: '',
   title: 'My edication',
-  description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime aut deserunt consequuntur aliquam iste nesciunt!',
+  description: 'For my education, university education, 2 years of college in Canada, and online learning:',
   items: [
     {
       institution: 'Faculty of Science - University of Montenegro',
@@ -105,7 +110,7 @@ const education = {
 const skills = {
   icon: '',
   title: 'My skills',
-  description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime aut deserunt consequuntur aliquam iste nesciunt!',
+  description: 'Profficient with Front End modern technologies: React, NextJS, and also backend: Node, SQL, Firebase:',
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -138,6 +143,22 @@ const skills = {
     {
       icon: <FaFigma />,
       name: 'figma'
+    },
+    {
+      icon: <IoLogoFirebase />,
+      name: 'firebase'
+    },
+    {
+      icon: <GrMysql />,
+      name: 'SQL'
+    },
+    {
+      icon: <FaPython />,
+      name: 'Python'
+    },
+    {
+      icon: <SiPrisma />,
+      name: 'Prisma'
     },
   ]
 }

@@ -3,10 +3,9 @@ import { FaGithub, FaLinkedinIn, FaTwitter, FaInstagram } from 'react-icons/fa'
 
 
 const socials = [
-    {icon: <FaGithub />, path: '' },
-    {icon: <FaLinkedinIn />, path: '' },
-    {icon: <FaTwitter/>, path: '' },
-    {icon: <FaInstagram />, path: '' },
+    {icon: <FaGithub />, path: 'https://github.com/Konstantin907' },
+    {icon: <FaLinkedinIn />, path: 'https://www.linkedin.com/in/konstantin-ivanovic-668491262/' },
+    {icon: <FaInstagram />, path: 'https://www.instagram.com/konstantin_ivanovic/' },
 
 ]
 

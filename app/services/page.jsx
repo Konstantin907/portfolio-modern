@@ -9,19 +9,19 @@ const services = [
   {
     num: '01',
     title: 'Web Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error nemo, perspiciatis ut omnis perferendis illum. Necessitatibus, similique?',
+    description: 'Web development involves using technologies like HTML, CSS, JavaScript, React, Node.js, MongoDB, SQL, and Next.js to build and maintain websites and web applications.',
     href: "",
   },
   {
     num: '02',
     title: 'Front End Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error nemo, perspiciatis ut omnis perferendis illum. Necessitatibus, similique?',
+    description: 'Frontend development uses HTML, CSS, JavaScript, and frameworks like React and Next.js to create the visual and interactive aspects of websites and applications.',
     href: "",
   },
   {
     num: '03',
     title: 'Back End Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error nemo, perspiciatis ut omnis perferendis illum. Necessitatibus, similique?',
+    description: 'Backend development involves technologies like Node.js, SQL, MongoDB, Firebase, and server-side logic to manage databases, authentication, and application functionality behind the scenes.',
     href: "",
   },
   
