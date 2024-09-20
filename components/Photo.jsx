@@ -19,10 +19,9 @@ const Photo = () => {
              opacity:1,
              transition:{delay: 2.4, duration: 0.4, ease:'easeInOut'}
        }}
-        className="w-[298px] h-[298px] 
-        xl:w-[498px] xl:[498px] mix-blend-lighten absolute">
+        className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute mt-10 bg-transparent sm:w-[200px] sm:right-12 sm:-mt-4 lg:mt-10 lg:right-0">
             <Image 
-                src="/profile.png"
+                src="/avvatar.png"
                 priority
                 quality={100}
                 fill
@@ -33,7 +32,7 @@ const Photo = () => {
       </motion.div>
 
       {/* circle */}
-      <motion.svg className="w=[300px] xl:w-[506px] h-[300px] xl:h-[506px]" 
+      <motion.svg className="w=[290px] xl:w-[506px] h-[300px] xl:h-[506px]" 
       fill='transparent'
       viewBox='0 0 506 506'
       xmlns='hhtp://www.w3.org/2000/svg'
