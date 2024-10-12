@@ -37,6 +37,18 @@ const projects = [
     live: 'https://chat-app-fullstack-teal.vercel.app/',
     github: 'https://github.com/Konstantin907/chat-app-fullstack',
   },
+  {
+    num: '03',
+    category: 'fullstack MERN',
+    title: 'Movie app',
+    description: 'Movies and tv show app fetching results from MongoDB for users, ranking movies/tv-shows available.',
+    stack:[
+      { name: 'React.js'}, {name: 'Javascript'},
+      {name: 'Nodejs'},{name: 'MongoDb'}],
+    image: '/project-3.png',
+    live: 'https://movies-mern-eo8l.vercel.app/',
+    github: 'https://github.com/Konstantin907/movies-MERN?tab=readme-ov-file',
+  },
 ]
 
 
