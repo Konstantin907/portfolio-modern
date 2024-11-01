@@ -40,14 +40,14 @@ const projects = [
   {
     num: '03',
     category: 'fullstack MERN',
-    title: 'Movie app',
-    description: 'Movies and tv show app fetching results from MongoDB for users, ranking movies/tv-shows available.',
+    title: 'Childcare System',
+    description: 'Real time application for childcare services with sign-in/out of children and update on the same.',
     stack:[
       { name: 'React.js'}, {name: 'Javascript'},
-      {name: 'Nodejs'},{name: 'MongoDb'}],
-    image: '/project-3.png',
-    live: 'https://movies-mern-eo8l.vercel.app/',
-    github: 'https://github.com/Konstantin907/movies-MERN?tab=readme-ov-file',
+      {name: 'Nodejs'},{name: 'MongoDb'},{name: 'Firebase'}],
+    image: '/childcare.png',
+    live: 'https://childcare-system.onrender.com/',
+    github: 'https://github.com/Konstantin907/childcare-system',
   },
 ]
 
