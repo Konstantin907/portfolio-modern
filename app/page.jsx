@@ -42,7 +42,7 @@ const Home = () => {
             >
               <Button 
                   variant='outline' size='lg' className='uppercase flex items-center gap-2'>
-                    View My CV
+                    Check Out My CV
                     <FiDownload className="text-xl "/>
                 </Button>
             </Link>              
@@ -55,9 +55,6 @@ const Home = () => {
               </div>
             </div>
           </div>
-        
-          
-        {/* photo */}
           <div className="order-1 xl:order-none mb-8 xl:mb-0">
             <Photo />
           </div>
