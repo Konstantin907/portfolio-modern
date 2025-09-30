@@ -1,12 +1,22 @@
+'use client'
+
 import Link from "next/link"
 import { Button } from "./ui/button"
 import Nav from "./Nav"
 import MobileNav from "./MobileNav"
-
+import LetterGlitch from "./LetterGlitch"
 
 const Header = () => {
   return (
-    <header className="py-8 xl:py-12 text-white">
+    <header className="relative py-8 xl:py-12 text-white">
+      <div className="absolute inset-0 -z-10 opacity-15">
+        <LetterGlitch
+            glitchSpeed={50}
+            centerVignette={true}
+            outerVignette={false}
+            smooth={true}
+        />
+      </div>
       <div className="container mx-auto flex justify-between items-center">
         {/* logo */}
         <Link href="/">

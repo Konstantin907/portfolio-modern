@@ -5,19 +5,32 @@ import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from 'react-icons/fi'
 import Link from 'next/link'
+import LetterGlitch from "@/components/LetterGlitch";
+
 
 
 const Home = () => {
   return (
-    <section className="h-full">
+    <section className=" relative overflow-hidden">
+
+       <div className="absolute top-0 left-0 w-full h-full -z-10 opacity-15">
+          <LetterGlitch
+            glitchSpeed={50}
+            centerVignette={true}
+            outerVignette={false}
+            smooth={true}
+          />
+        </div>
+
+
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           <div className="text-white text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Software Developer</span>
+            <span className="text-xl">Fullstack Developer</span>
             <h1 className="h1 mb-6">
             Hello I&apos;m <br /> <span className="text-accent">Konstantin Ivanovic</span>
             </h1>
-            <p className="max-w-[500px] mb-9 text-white/80">
+            <p className="max-w-[500px] mb-9 text-white font-">
               I excel at crafting elegant digital experiences and I am proficient in 
               various programming languages and technologies.
             </p>
