@@ -15,14 +15,14 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: '01',
-    category: 'frontend',
-    title: 'Star Portfolio',
-    description: 'Online T-shirt designing, you can use text, color, and pictures from all platforms. You can be really creative!',
+    category: 'fullstack',
+    title: 'Rental Application',
+    description: 'Rental application with register/login, dashboard with chat feature, save a rental unit, create a new unit for rent.',
     stack:[
-      { name: 'React.js'}, {name: 'Css 3'}, {name: 'Javascript'},],
-    image: '/first-4.png',
-    live: 'https://threejs-project-delta.vercel.app/',
-    github: 'https://github.com/Konstantin907/threejs-project',
+      { name: 'React.js'}, {name: 'SCSS'}, {name: 'Javascript'}, {name: 'MongoDB'},{name: 'Framer'},],
+    image: '/project-rental.png',
+    live: 'https://estate-fullstack-app.vercel.app/',
+    github: 'https://github.com/Konstantin907/estate-fullstack-app',
   },
 
  
