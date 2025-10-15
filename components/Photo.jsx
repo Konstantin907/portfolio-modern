@@ -21,12 +21,12 @@ const Photo = () => {
        }}
         className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute mt-10 bg-transparent sm:w-[200px] sm:right-12 sm:-mt-4 lg:mt-10 lg:right-0">
             <Image 
-                src="/avvatar.png"
+                src="/profile01.png"
                 priority
                 quality={100}
                 fill
                 alt="profile"
-                className="object-contain"
+                className="object-contain mt-[-100px]"
             />
         </motion.div>
       </motion.div>
