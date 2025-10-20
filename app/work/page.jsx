@@ -37,18 +37,18 @@ const projects = [
     live: 'django-blog-medium.onrender.com/',
     github: 'https://github.com/Konstantin907/django-blog-medium',
   },
-  {
-    num: '03',
-    category: 'fullstack MERN',
-    title: 'Childcare System',
-    description: 'Real time application for childcare services with sign-in/out of children and update on the same.',
-    stack:[
-      { name: 'React.js'}, {name: 'Javascript'},
-      {name: 'Nodejs'},{name: 'MongoDb'},{name: 'Firebase'}],
-    image: '/childcare.png',
-    live: 'https://childcare-system.onrender.com/',
-    github: 'https://github.com/Konstantin907/childcare-system',
-  },
+  // {
+  //   num: '03',
+  //   category: 'fullstack MERN',
+  //   title: 'Childcare System',
+  //   description: 'Real time application for childcare services with sign-in/out of children and update on the same.',
+  //   stack:[
+  //     { name: 'React.js'}, {name: 'Javascript'},
+  //     {name: 'Nodejs'},{name: 'MongoDb'},{name: 'Firebase'}],
+  //   image: '/childcare.png',
+  //   live: 'https://childcare-system.onrender.com/',
+  //   github: 'https://github.com/Konstantin907/childcare-system',
+  // },
 ]
 
 
