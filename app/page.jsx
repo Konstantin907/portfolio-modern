@@ -38,7 +38,7 @@ const Home = () => {
             <div className="flex flex-col xl:flex-row items-center gap-8">
 
             <Link 
-            href='https://drive.google.com/file/d/1AUaM4ZbwIDNGzZdZ7dWRa-ZT9nshqdZ5/view?usp=drive_link'
+            href='https://docs.google.com/document/d/1ZomZrN8s8xwkRpX8vXeV8itww1BxYmAGj67Gke4-uPQ/edit?usp=sharing'
             >
               <Button 
                   variant='outline' size='lg' className='uppercase flex items-center gap-2'>
