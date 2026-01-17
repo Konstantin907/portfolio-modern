@@ -55,7 +55,7 @@ const projects = [
     title: 'E-Commerce Application',
     description: 'E-Commerce Platform with GSAP Scroll & Letter animations, register/login, marketplace, Add item, interactive review section and comment section ,cart-items, filtering, Stripe checkout tilting cards, debouced input.',
     stack:[
-      { name: 'NextJS'}, { name: 'GSAP'},{name: 'Typescript'},{name: 'GSAP & Framer Motion'},
+      { name: 'NextJS'}, { name: 'GSAP'},{name: 'Typescript'},{name: 'GSAP'},
       {name: 'Nodejs'},{name: 'PostreSQL'},{name: 'oAuth'},{name: 'Cloudinary'},{ name: 'Neon DB' }],
     image: '/04.png',
     live: 'https://online-shopping-beige-two.vercel.app/',
@@ -95,14 +95,24 @@ const Work = () => {
                 {project.category} project
               </h2>
               <p className="text-white/60">{project.description}</p>
-              <ul className="flex gap-4">
+
+
+              <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
                 {project.stack.map((item, index) => (
-                  <li key={index} className="text-lg text-accent">
+                  <motion.li
+                    key={index}
+                    whileHover={{ y: -6, scale: 1.05 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                    className="px-3 py-1 text-[11px] font-semibold rounded-full bg-white/10 border border-white/10 text-accent text-center cursor-pointer"
+                  >
                     {item.name}
                     {index !== project.stack.length - 1 && "."}
-                  </li>
+                  </motion.li>
                 ))}
               </ul>
+
+
+
               <div className="border border-white/20 "></div>
               <div className="flex items-center gap-4">
                 {/* live project button */}
