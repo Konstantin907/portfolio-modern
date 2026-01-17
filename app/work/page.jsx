@@ -49,6 +49,18 @@ const projects = [
     live: 'https://planning-app-fullstack.vercel.app/',
     github: 'https://github.com/Konstantin907/planning-app',
   },
+    {
+    num: '04',
+    category: 'Fullstack NEXTJS with PostgreSQL',
+    title: 'E-Commerce Application',
+    description: 'E-Commerce Platform with GSAP Scroll & Letter animations, register/login, marketplace, Add item, interactive review section and comment section ,cart-items, filtering, Stripe checkout tilting cards, debouced input.',
+    stack:[
+      { name: 'NextJS'}, { name: 'GSAP'},{name: 'Typescript'},{name: 'GSAP & Framer Motion'},
+      {name: 'Nodejs'},{name: 'PostreSQL'},{name: 'oAuth'},{name: 'Cloudinary'},{ name: 'Neon DB' }],
+    image: '/04.png',
+    live: 'https://online-shopping-beige-two.vercel.app/',
+    github: 'https://github.com/Konstantin907/online-shopping',
+  },
 ]
 
 
