@@ -24,21 +24,8 @@ const projects = [
     live: 'https://estate-fullstack-app.vercel.app/',
     github: 'https://github.com/Konstantin907/estate-fullstack-app',
   },
-
- 
   {
     num: '02',
-    category: 'fullstack',
-    title: 'Fullstack Blog App',
-    description: 'Registering, login, adding posts, create, like and comment all of the posts depending on your filtering.',
-    stack:[
-      { name: 'Django'}, {name: 'TailwindCSS'}, {name: 'Python'}],
-    image: '/blog.png',
-    live: 'django-blog-medium.onrender.com/',
-    github: 'https://github.com/Konstantin907/django-blog-medium',
-  },
-  {
-    num: '03',
     category: 'fullstack MERN',
     title: 'Planning Application',
     description: 'Planning app register/login feature, diagram planning feature calendar planning , weekly tick tasks , habit tracking and project planning in general.',
@@ -50,7 +37,7 @@ const projects = [
     github: 'https://github.com/Konstantin907/planning-app',
   },
     {
-    num: '04',
+    num: '03',
     category: 'Fullstack NEXTJS with PostgreSQL',
     title: 'E-Commerce Application',
     description: 'E-Commerce Platform with GSAP Scroll & Letter animations, register/login, marketplace, Add item, interactive review section and comment section ,cart-items, filtering, Stripe checkout tilting cards, debouced input.',

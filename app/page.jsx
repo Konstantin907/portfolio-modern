@@ -11,7 +11,7 @@ import LetterGlitch from "@/components/LetterGlitch";
 
 const Home = () => {
   return (
-    <section className=" relative overflow-hidden">
+    <section className=" relative overflow-hidden min-h-screen">
 
        <div className="absolute top-0 left-0 w-full h-full -z-10 opacity-15">
           <LetterGlitch
