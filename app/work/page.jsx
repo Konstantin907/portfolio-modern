@@ -15,7 +15,7 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: '01',
-    category: 'fullstack',
+    category: 'Fullstack',
     title: 'Rental Application',
     description: 'Rental application with register/login, dashboard with chat feature, save a rental unit, create a new unit for rent.',
     stack:[
@@ -26,7 +26,18 @@ const projects = [
   },
   {
     num: '02',
-    category: 'fullstack MERN',
+    category: 'Fullstack Django',
+    title: 'Fullstack Blog App',
+    description: 'Registering, login, adding posts, create, like and comment all of the posts depending on your filtering.',
+    stack:[
+      { name: 'Django'}, {name: 'TailwindCSS'}, {name: 'Python'}],
+    image: '/blog.png',
+    live: 'https://django-blog-medium.onrender.com/',
+    github: 'https://github.com/Konstantin907/django-blog-medium',
+  },
+  {
+    num: '03',
+    category: 'Fullstack - MERN',
     title: 'Planning Application',
     description: 'Planning app register/login feature, diagram planning feature calendar planning , weekly tick tasks , habit tracking and project planning in general.',
     stack:[
@@ -37,8 +48,8 @@ const projects = [
     github: 'https://github.com/Konstantin907/planning-app',
   },
     {
-    num: '03',
-    category: 'Fullstack NEXTJS with PostgreSQL',
+    num: '04',
+    category: 'Fullstack NextJS with PostgreSQL',
     title: 'E-Commerce Application',
     description: 'E-Commerce Platform with GSAP Scroll & Letter animations, register/login, marketplace, Add item, interactive review section and comment section ,cart-items, filtering, Stripe checkout tilting cards, debouced input.',
     stack:[
