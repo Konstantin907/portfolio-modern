@@ -21,12 +21,12 @@ const Photo = () => {
        }}
         className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute mt-10 bg-transparent sm:w-[200px] sm:right-12 sm:-mt-4 lg:mt-10 lg:right-0">
             <Image 
-                src="/profile01.png"
+                src="/profile_dark.png" 
                 priority
                 quality={100}
                 fill
                 alt="profile"
-                className="object-contain mt-[-100px]"
+                className="object-contain mt-[-70px]"
             />
         </motion.div>
       </motion.div>
@@ -34,7 +34,7 @@ const Photo = () => {
       {/* circle */}
       <motion.svg className="w=[290px] xl:w-[506px] h-[300px] xl:h-[506px]" 
       fill='transparent'
-      viewBox='0 0 506 506'
+      viewBox='0 0 506 576'
       xmlns='hhtp://www.w3.org/2000/svg'
       >
         
