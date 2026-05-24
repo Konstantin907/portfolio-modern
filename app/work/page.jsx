@@ -16,13 +16,13 @@ const projects = [
   {
     num: '01',
     category: 'Fullstack',
-    title: 'Rental Application',
-    description: 'Rental application with register/login, dashboard with chat feature, save a rental unit, create a new unit for rent.',
+    title: 'Sentinel Observer',
+    description: 'Full-stack fleet monitoring dashboard — register nodes, ingest CPU/RAM/ping metrics, and watch live health, alerts, logs, and per-node inspection.',
     stack:[
-      { name: 'React.js'}, {name: 'SCSS'}, {name: 'Javascript'}, {name: 'MongoDB'},{name: 'Framer'},],
-    image: '/project-rental.png',
-    live: 'https://estate-fullstack-app.vercel.app/',
-    github: 'https://github.com/Konstantin907/estate-fullstack-app',
+      { name: 'Next.js'}, {name: 'TailwindCSS'}, {name: 'Typescript'}, {name: 'Supabase'},{name: 'Postgres'},],
+    image: '/sentinel.png',
+    live: 'https://sentinel-observer.vercel.app/',
+    github: 'https://github.com/Konstantin907/sentinel-observer',
   },
   {
     num: '02',
