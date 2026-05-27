@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/select"
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
 import { motion } from "framer-motion";
+import { useAnimationDelay } from "@/hooks/useAnimationDelay";
 
 
 const info = [
@@ -35,10 +36,12 @@ const info = [
 ]
 
 const Contact = () => {
+  const delay = useAnimationDelay(0.35, 2.4)
+
   return (
     <motion.section
     initial={{opacity:0}}
-    animate={{opacity:1, transition:{duration: 0.4, ease: 'easeIn'}}}
+    animate={{opacity:1, transition:{delay, duration: 0.4, ease: 'easeIn'}}}
     className="py-6"
     >
       <div className="container mx-auto flex justify-center items-center min-h-screen">

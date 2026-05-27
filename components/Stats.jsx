@@ -1,5 +1,8 @@
 "use client"
 
+import CountUp from "react-countup"
+import { useAnimationDelay } from "@/hooks/useAnimationDelay"
+
 const stats = [
   { num: 3, text: "Years of experience" },
   { num: 15, text: "Projects completed" },
@@ -8,6 +11,8 @@ const stats = [
 ]
 
 const Stats = () => {
+  const delay = useAnimationDelay(0.35, 2)
+
   return (
     <section className="container mx-auto pt-4 pb-12 xl:pt-0 xl:pb-0">
       <div className="flex flex-wrap gap-6 max-w-[80vw] mx-auto xl:max-w-none">
@@ -16,12 +21,12 @@ const Stats = () => {
             key={index}
             className="flex-1 flex gap-4 items-center justify-center xl:justify-start"
           >
-            <span
-              className="text-white text-6xl xl:text-6xl font-extrabold tabular-nums min-w-[4ch] inline-block text-right"
-              aria-label={String(item.num)}
-            >
-              {item.num}
-            </span>
+            <CountUp
+              end={item.num}
+              duration={5}
+              delay={delay}
+              className="text-white text-6xl xl:text-6xl font-extrabold tabular-nums min-w-[4ch] inline-block"
+            />
             <p
               className={`${item.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"} text-white/80 leading-snug`}
             >

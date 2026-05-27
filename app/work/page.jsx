@@ -10,6 +10,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 import Link from "next/link";
 import Image from "next/image";
 import WorkSliderBtns from "@/components/WorkSliderBtns";
+import { useAnimationDelay } from "@/hooks/useAnimationDelay";
 
 
 const projects = [
@@ -42,7 +43,7 @@ const projects = [
     description: 'Planning app register/login feature, diagram planning feature calendar planning , weekly tick tasks , habit tracking and project planning in general.',
     stack:[
       { name: 'React.js'}, { name: 'Vite'},{name: 'Javascript'},
-      {name: 'Nodejs'},{name: 'MongoDb'},,{name: 'Railway'}],
+      {name: 'Nodejs'},{name: 'MongoDb'},{name: 'Railway'}],
     image: '/cube.png',
     live: 'https://planning-app-fullstack.vercel.app/',
     github: 'https://github.com/Konstantin907/planning-app',
@@ -63,8 +64,8 @@ const projects = [
 
 
 const Work = () => {
-
-  const[project, setProject] = useState(projects[0])
+  const delay = useAnimationDelay(0.35, 2.4)
+  const [project, setProject] = useState(projects[0])
 
   //slider change function:
   const handleSlideChange = (swiper) =>{
@@ -78,7 +79,7 @@ const Work = () => {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { duration: 0.4, ease: "easeIn" },
+        transition: { delay, duration: 0.4, ease: "easeIn" },
       }}
       className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
     >
@@ -97,13 +98,15 @@ const Work = () => {
 
               <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 min-h-[72px] content-start">
                 {project.stack.map((item, index) => (
-                  <li
+                  <motion.li
                     key={index}
-                    className="px-3 py-1 text-[11px] font-semibold rounded-full bg-white/10 border border-white/10 text-accent text-center"
+                    whileHover={{ y: -6, scale: 1.05 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                    className="px-3 py-1 text-[11px] font-semibold rounded-full bg-white/10 border border-white/10 text-accent text-center cursor-pointer"
                   >
                     {item.name}
                     {index !== project.stack.length - 1 && "."}
-                  </li>
+                  </motion.li>
                 ))}
               </ul>
 

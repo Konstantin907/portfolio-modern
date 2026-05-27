@@ -36,16 +36,16 @@ export default function Loader() {
           className="fixed inset-0 bg-black flex items-center justify-center z-50"
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 1 }}
           aria-hidden="true"
         >
           <div className="min-h-[6rem] flex items-center justify-center">
             {!showWelcome ? (
               <motion.h1
                 className="text-8xl font-bold text-accent tracking-widest"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.6, ease: "easeInOut" }}
+                initial={{ scale: 0 }}
+                animate={{ scale: 1, rotate: 360 }}
+                transition={{ duration: 1, ease: "easeInOut" }}
               >
                 {" </> "}
               </motion.h1>
@@ -63,10 +63,13 @@ export default function Loader() {
                     key={i}
                     className="text-8xl font-bold text-accent inline-block"
                     variants={{
-                      hidden: { opacity: 0 },
-                      visible: { opacity: 1 },
+                      hidden: { opacity: 0, y: 20 },
+                      visible: { opacity: 1, y: 0 },
                     }}
                     transition={{ duration: 0.5, ease: "easeOut" }}
+                    style={{
+                      transform: `translateY(${i % 2 === 0 ? "0px" : "8px"})`,
+                    }}
                   >
                     {letter}
                   </motion.span>
