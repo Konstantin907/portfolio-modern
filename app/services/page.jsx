@@ -40,10 +40,9 @@ const container = {
 
 // variants:
 const item = {
-  hidden: { opacity: 0, y: 30 },
+  hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    y: 0,
     transition: { duration: 0.8, ease: "easeOut" },
   },
 };
@@ -66,14 +65,7 @@ const Services = () => {
               key={index}
               variants={item}
               className="flex-1 flex flex-col p-5 justify-center gap-6 group cursor-pointer"
-              whileHover={{
-                scale: 1.05,
-                rotateX: 20,
-                rotateY: 10,
-                borderRadius: "20px",
-                boxShadow: "0px 12px 30px rgba(0,0,0,0.4)",
-              }}
-              whileTap={{ scale: 0.97 }}
+              whileHover={{ opacity: 0.9 }}
             >
               <div className="w-full flex justify-between items-center">
                 <div

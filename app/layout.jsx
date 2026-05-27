@@ -5,9 +5,11 @@ import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
 import Loader from "@/components/Loader";
 
-const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], 
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800",] 
-, variable: '--font-jetBrainsMono'
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  display: "swap",
+  variable: "--font-jetBrainsMono",
 });
 
 export const metadata = {

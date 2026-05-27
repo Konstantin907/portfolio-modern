@@ -81,9 +81,9 @@ const skills = {
 
 // motion variants
 const fadeInOut = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0 },
-  exit: { opacity: 0, y: -30 },
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 },
+  exit: { opacity: 0 },
 }
 
 const Resume = () => {

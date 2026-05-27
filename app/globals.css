@@ -8,6 +8,9 @@
     body{
         @apply font-primary bg-primary leading-loose;
     }
+    html {
+        overflow-x: clip;
+    }
     .h1{
         @apply text-[48px] xl:text-[60px] leading-[1.1] font-semibold;
     }

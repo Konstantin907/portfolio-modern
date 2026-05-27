@@ -6,33 +6,31 @@ import Image from "next/image"
 
 const Photo = () => {
   return (
-    <div className='w-full h-full relative'>
-      <motion.div 
-        initial={{opacity: 0}} 
+    <div className="w-full relative min-h-[300px] xl:min-h-[506px]">
+      <motion.div
+        initial={{ opacity: 0 }}
         animate={{
-            opacity:1,
-            transition:{delay: 2, duration: 0.4, ease:'easeIn'}
-      }}>
-        <motion.div 
-         initial={{opacity: 0}} 
-         animate={{
-             opacity:1,
-             transition:{delay: 2.4, duration: 0.4, ease:'easeInOut'}
-       }}
-        className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute mt-10 bg-transparent sm:w-[200px] sm:right-12 sm:-mt-4 lg:mt-10 lg:right-0">
-            <Image 
-                src="/profile_dark.png" 
-                priority
-                quality={100}
-                fill
-                alt="profile"
-                className="object-contain mt-[-70px]"
-            />
-        </motion.div>
+          opacity: 1,
+          transition: { delay: 0.2, duration: 0.4, ease: "easeIn" },
+        }}
+        className="relative w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mx-auto sm:w-[200px]"
+      >
+        <div className="relative w-full h-full mix-blend-lighten">
+          <Image
+            src="/profile_dark.png"
+            priority
+            quality={100}
+            fill
+            sizes="(max-width: 1280px) 298px, 498px"
+            alt="profile"
+            className="object-contain -translate-y-[70px]"
+          />
+        </div>
       </motion.div>
 
       {/* circle */}
-      <motion.svg className="w=[290px] xl:w-[506px] h-[300px] xl:h-[506px]" 
+      <motion.svg
+        className="absolute top-0 left-1/2 -translate-x-1/2 w-[290px] h-[300px] xl:w-[506px] xl:h-[506px] pointer-events-none"
       fill='transparent'
       viewBox='0 0 506 576'
       xmlns='hhtp://www.w3.org/2000/svg'
