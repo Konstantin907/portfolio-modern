@@ -26,17 +26,6 @@ const projects = [
     github: 'https://github.com/Konstantin907/sentinel-observer',
   },
   {
-    num: '02',
-    category: 'Fullstack Django',
-    title: 'Fullstack Blog App',
-    description: 'Registering, login, adding posts, create, like and comment all of the posts depending on your filtering.',
-    stack:[
-      { name: 'Django'}, {name: 'TailwindCSS'}, {name: 'Python'}],
-    image: '/blog.png',
-    live: 'https://django-blog-medium.onrender.com/',
-    github: 'https://github.com/Konstantin907/django-blog-medium',
-  },
-  {
     num: '03',
     category: 'Fullstack - MERN',
     title: 'Planning Application - Cube',
@@ -48,7 +37,7 @@ const projects = [
     live: 'https://planning-app-fullstack.vercel.app/',
     github: 'https://github.com/Konstantin907/planning-app',
   },
-    {
+  {
     num: '04',
     category: 'Fullstack NextJS with PostgreSQL',
     title: 'E-Commerce Application',
