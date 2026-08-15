@@ -26,6 +26,23 @@ const projects = [
     github: 'https://github.com/Konstantin907/sentinel-observer',
   },
   {
+    num: '02',
+    category: 'Fullstack',
+    title: 'InterviewAI',
+    description:
+      'Full-stack mock interview platform — register by role track, run timed sessions with typed or dictated answers, and get scored feedback from a local evaluation engine.',
+    stack: [
+      { name: 'Next.js' },
+      { name: 'Express' },
+      { name: 'TypeScript' },
+      { name: 'MongoDB' },
+      { name: 'TailwindCSS' },
+    ],
+    image: '/interview-ai.png',
+    live: 'https://interview-mock-ai-app.vercel.app/',
+    github: 'https://github.com/Konstantin907/interview-mock-ai-app',
+  },
+  {
     num: '03',
     category: 'Fullstack - MERN',
     title: 'Planning Application - Cube',
