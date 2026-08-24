@@ -44,15 +44,21 @@ const projects = [
   },
   {
     num: '03',
-    category: 'Fullstack - MERN',
-    title: 'Planning Application - Cube',
-    description: 'Planning app register/login feature, diagram planning feature calendar planning , weekly tick tasks , habit tracking and project planning in general.',
-    stack:[
-      { name: 'React.js'}, { name: 'Vite'},{name: 'Javascript'},
-      {name: 'Nodejs'},{name: 'MongoDb'},{name: 'Railway'}],
-    image: '/cube.png',
-    live: 'https://planning-app-fullstack.vercel.app/',
-    github: 'https://github.com/Konstantin907/planning-app',
+    category: 'Fullstack',
+    title: 'Draftly',
+    description:
+      'Real-time collaborative whiteboard — JWT auth with refresh-token rotation, role-based boards, infinite canvas with pen, shapes and sticky notes, Socket.IO live cursors, and debounced autosave to Postgres.',
+    stack: [
+      { name: 'Next.js' },
+      { name: 'Express' },
+      { name: 'TypeScript' },
+      { name: 'PostgreSQL' },
+      { name: 'Prisma' },
+      { name: 'Socket.IO' },
+    ],
+    image: '/draftly.png',
+    live: 'https://canvas-app-alpha-six.vercel.app/login',
+    github: 'https://github.com/Konstantin907/canvas-app',
   },
   {
     num: '04',
