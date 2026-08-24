@@ -165,16 +165,37 @@ const Work = () => {
             >
               {projects.map((project, index) => (
                 <SwiperSlide key={index} className="w-full">
-                  <div className="relative group flex justify-center items-center bg-black/20 rounded-xl overflow-hidden h-[400px] w-full">
-                    {/* overlay */}
-                    <div className="absolute inset-0 bg-black/10 z-10"></div>
-                    <Image
-                      src={project.image}
-                      alt="project-image"
-                      fill
-                      sizes="(max-width: 1280px) 100vw, 600px"
-                      className="object-contain p-4"
-                    />
+                  <div className="group relative h-[400px] w-full">
+                    {/* ambient glow */}
+                    <div className="pointer-events-none absolute -inset-6 z-0 rounded-3xl bg-accent/20 opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-100" />
+
+                    {/* browser window frame */}
+                    <div className="relative z-10 flex h-full w-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/10 to-white/[0.02] shadow-2xl shadow-black/40 backdrop-blur-sm transition-transform duration-500 group-hover:-translate-y-1">
+                      {/* title bar */}
+                      <div className="flex items-center gap-3 border-b border-white/10 bg-white/[0.03] px-4 py-3">
+                        <div className="flex gap-2">
+                          <span className="h-3 w-3 rounded-full bg-[#ff5f57]" />
+                          <span className="h-3 w-3 rounded-full bg-[#febc2e]" />
+                          <span className="h-3 w-3 rounded-full bg-[#28c840]" />
+                        </div>
+                        <div className="mx-auto flex max-w-[70%] items-center gap-2 truncate rounded-md bg-black/30 px-3 py-1 text-[11px] text-white/40">
+                          <span className="h-2 w-2 shrink-0 rounded-full bg-accent" />
+                          <span className="truncate">{project.live}</span>
+                        </div>
+                      </div>
+
+                      {/* screenshot */}
+                      <div className="relative flex-1 overflow-hidden bg-black/40">
+                        <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
+                        <Image
+                          src={project.image}
+                          alt={`${project.title} preview`}
+                          fill
+                          sizes="(max-width: 1280px) 100vw, 600px"
+                          className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105"
+                        />
+                      </div>
+                    </div>
                   </div>
                   <WorkSliderBtns
                     containerStyles="flex gap-2 text-white absolute right-0 bottom-[calc(50%-22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
